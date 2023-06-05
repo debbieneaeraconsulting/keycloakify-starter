@@ -8,9 +8,9 @@ import { addParamToUrl } from "powerhooks/tools/urlSearchParams";
 
 //On older Keycloak version you need the /auth (e.g: http://localhost:8080/auth)
 //On newer version you must remove it (e.g: http://localhost:8080 )
-const keycloakUrl = "https://auth.code.gouv.fr/auth";
-const keycloakRealm = "keycloakify";
-const keycloakClient= "starter";
+const keycloakUrl = "http://172.21.182.244:8084";
+const keycloakRealm = "cvmanager";
+const keycloakClient= "cvmanager-gui";
 
 const { OidcClientProvider } = createOidcClientProvider({
     url: keycloakUrl,
